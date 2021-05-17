@@ -1,28 +1,56 @@
+@charset "UTF-8";
 * {
-  border: 1px solid black;
-  border-style: dashed;
-  border-color: black;
-  margin: 0px;
-  padding: 0px; }
-
-img {
-  max-width: 100%;
-  height: auto; }
+  margin: 0;
+  border: 0;
+  padding: 0; }
 
 body {
-  text-align: center; }
+  text-align: center;
+  color: #000f08;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-weight: 800;
+  font-size: 3.75em;
+  margin-bottom: 0.25em; }
+
+h2 {
+  font-weight: 700;
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 2em; }
+
+h4 {
+  font-weight: 400;
+  font-size: 1.75em; }
+
+h5 {
+  font-weight: 400;
+  font-size: 1.25em; }
+
+.subtitulo {
+  font-weight: 400; }
 
 .oscuro {
   background-color: black;
   color: white; }
+  .oscuro a {
+    color: white;
+    text-decoration: none; }
 
 .nav {
   text-align: left;
-  padding-left: 10%; }
+  padding-left: 1.25rem 4rem;
+  position: fixed;
+  width: 100vw; }
+  .nav .ul {
+    list-style-type: none; }
   .nav #nav-elements li {
     display: inline-block;
     vertical-align: middle;
-    margin: 10px; }
+    margin: 0 1em; }
   .nav a {
     text-decoration: none;
     color: white; }
@@ -33,34 +61,50 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
-  text-shadow: 2px 3px 2px #707070;
-  padding: 50px 50px 250px 50px; }
+  text-shadow: 0.125em 0.25em 0.125em #707070;
+  /* Esta línea la pasamos a em */
+  padding: 6.25rem 3.125rem; }
   header h1 {
     padding-top: 0.5em; }
 
 section {
-  margin-top: 75px; }
+  margin-top: 4.5rem; }
+
+#meeting div {
+  margin: 1em auto; }
 
 #speaker {
-  background-color: saddlebrown;
-  padding: 50px;
-  text-align: left; }
+  text-align: left;
+  background: saddlebrown;
+  color: white;
+  padding: 3.125rem;
+  white-space: nowrap; }
   #speaker .centrado {
     width: 75%;
     margin: 0 auto; }
-    #speaker .centrado .foto-speaker {
-      display: inline-block;
-      height: 20%;
-      vertical-align: middle;
-      width: 25%; }
-    #speaker .centrado .info-speaker {
-      color: white;
-      display: inline-block;
-      height: 20%;
-      vertical-align: middle;
-      width: 72.5%; }
+  #speaker .foto-speaker {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%; }
+  #speaker .info-speaker {
+    width: 72.5%;
+    vertical-align: middle;
+    margin-left: 2.5%;
+    color: white;
+    display: inline-block;
+    white-space: normal; }
 
 #eventos .col-evento {
   display: inline-block; }
+#eventos h2 {
+  margin-bottom: 1em; }
+#eventos h3 {
+  margin: 1 em auto; }
+
+footer {
+  padding: 3.125rem;
+  margin-top: 4.5rem; }
+  footer i {
+    margin: 0 0.25em 0.5em 0.25em; }
 
 /*# sourceMappingURL=style.css.map */
